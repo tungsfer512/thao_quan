@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="   //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/styles/base.css">
+    <link type="text/css" rel="stylesheet" href="./assets/styles/index.css">
+    <title>Phương Thảo & Văn Quân</title>
+</head>
+
+<body class="overflow-hidden user-select-none">
+    <div class="container-fuild d-flex flex-column overflow-hidden min-vh-100 vh-100 overflow-hidden">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand me-4 cursor-pointer">
+                    <div class="flex-row justify-content-center align-items-center d-none d-sm-flex cursor-pointer">
+                        <span class="h3">Phương Thảo</span>
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                            type="module"></script><dotlottie-player
+                            src="https://lottie.host/7ad3ca40-e76d-4e1e-b804-13e3a6b397fe/D7aWiP5O8v.json"
+                            background="transparent" speed="1" style="width: 60px; height: 60px" direction="1"
+                            mode="bounce" loop autoplay></dotlottie-player>
+                        <span class="h3">Văn Quân</span>
+                    </div>
+                    <div
+                        class="flex-row justify-content-center align-items-center d-none d-ssm-flex d-sm-none cursor-pointer">
+                        <span class="h3">Thảo</span>
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                            type="module"></script><dotlottie-player
+                            src="https://lottie.host/7ad3ca40-e76d-4e1e-b804-13e3a6b397fe/D7aWiP5O8v.json"
+                            background="transparent" speed="1" style="width: 60px; height: 60px" direction="1"
+                            mode="bounce" loop autoplay></dotlottie-player>
+                        <span class="h3">Quân</span>
+                    </div>
+                    <div class="flex-row justify-content-center align-items-center d-flex d-ssm-none cursor-pointer">
+                        <span class="h3">T</span>
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                            type="module"></script><dotlottie-player
+                            src="https://lottie.host/7ad3ca40-e76d-4e1e-b804-13e3a6b397fe/D7aWiP5O8v.json"
+                            background="transparent" speed="1" style="width: 60px; height: 60px" direction="1"
+                            mode="bounce" loop autoplay></dotlottie-player>
+                        <span class="h3">Q</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title d-flex flex-row justify-content-center align-items-center cursor-pointer"
+                            id="offcanvasRightLabel">
+                            <span class="h2">Thảo</span>
+                            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                type="module"></script><dotlottie-player
+                                src="https://lottie.host/7ad3ca40-e76d-4e1e-b804-13e3a6b397fe/D7aWiP5O8v.json"
+                                background="transparent" speed="1" style="width: 80px; height: 80px" direction="1"
+                                mode="bounce" loop autoplay></dotlottie-player>
+                            <span class="h2">Quân</span>
+                        </div>
+                        <button type="button" id="btn-close-offcanvas" class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link cursor-pointer" id="nav-loimoi">Lời mời</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cursor-pointer" id="nav-albumanhcuoi">Ảnh cưới</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cursor-pointer" id="nav-chucmung">Gửi lời chúc</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Header -->
+        <!-- --------------------------------------------------- -->
+        <!-- Fake Header -->
+        <div id="fake-header" class="fake-header sticky-top"></div>
+        <!-- End Fake Header -->
+        <!-- --------------------------------------------------- -->
+        <!-- Main Content -->
+        <div class="flex-grow-1 overflow-auto" id="main-content">
+            <div id="top-of-page"></div>
+            <section class="container-fuild h-100">
+                <div class="h-100 bg-blur position-relative d-flex justify-content-center align-items-center">
+                    <div class="swiper mySwiper h-100">
+                        <div class="swiper-wrapper h-100"></div>
+                    </div>
+                    <div
+                        class="bg-blur-overlay text-white flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                        <div
+                            class="header-love-bg d-flex flex-column justify-content-center align-items-center font-great-vibes position-relative">
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center header-love-content">
+                                <span class="fs-1 text-center">Lễ Thành Hôn</span>
+                                <strong class="my-3">
+                                    <h3 class="fs-1 d-block d-lg-inline text-center"><strong>Phương Thảo</strong></h3>
+                                    <h3 class="fs-1 d-block d-lg-inline text-center"><strong>&nbsp;&amp;&nbsp;</strong>
+                                    </h3>
+                                    <h3 class="fs-1 d-block d-lg-inline text-center"><strong>Văn Quân</strong></h3>
+                                </strong>
+                                <strong class="fs-2">01/01/2023</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="loimoi"></div>
+            <section class="p-3 p-sm-5 bg-invitation py-5">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col col-12 col-lg-6 py-5">
+                            <div
+                                class="py-3 mb-4 border-bottom border-danger border-2 zindex-content position-relative">
+                                <h2 class="m-0 invitation-left-heading d-inline fs-1">
+                                    Tiệc Cưới</h2>
+                                <span class="d-inline">&nbsp;</span>
+                                <h2 class="m-0 invitation-left-heading d-inline fs-1">
+                                    Nhà Trai</h2>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col col-12 col-lg-6">
+                                    <img src="./assets/images/wedding/info_couple/chu_re.jpg" class="w-100">
+                                </div>
+                                <div
+                                    class="col col-12 col-lg-6 d-flex flex-lg-column justify-content-lg-end align-items-lg-end">
+                                    <div class="info-family m-3 p-3 border-2 border-start border-danger">
+                                        <span class="d-block text-start">Ông: Nguyễn Văn A</span>
+                                        <span class="d-block text-start">Bà: Nguyễn Thị B</span>
+                                        <span class="d-block text-start">Chú rể: Nguyễn Văn X</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div class="p-3 diachi">Địa chỉ: Xóm Cối, Thôn Thu Quế, Xã Song Phượng, Huyện Đan Phượng,
+                                        Hà Nội</div>
+                                    <div class="gio-moitiec">16:30</div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="border-top border-bottom border-2 p-2 fs-4">Chủ Nhật</div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center px-4">
+                                            <div class="ngay-moitiec">31</div>
+                                            <div class="">Năm 2023</div>
+                                        </div>
+                                        <div class="border-top border-bottom border-2 p-2 fs-4">Tháng 12</div>
+                                    </div>
+                                    <div class="p-3">(Tức ngày 19 tháng 11 năm Quý Mão)</div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center w-100">
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="ngay" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Ngày</div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="gio" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Giờ</div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="phut" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Phút</div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="giay" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Giây</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-6 py-5">
+                            <div
+                                class="py-3 mb-4 border-bottom border-danger border-2 zindex-content position-relative">
+                                <h2 class="m-0 invitation-left-heading d-inline fs-1">
+                                    Tiệc Cưới</h2>
+                                <span class="d-inline">&nbsp;</span>
+                                <h2 class="m-0 invitation-left-heading d-inline fs-1">
+                                    Nhà Gái</h2>
+                            </div>
+                            <div class="row my-3">
+                                <div
+                                    class="col col-12 col-lg-6 d-flex flex-lg-column justify-content-lg-end align-items-lg-end">
+                                    <div class="info-family m-3 p-3 border-2 border-end border-danger">
+                                        <span class="d-block text-end">Ông: Nguyễn Văn A</span>
+                                        <span class="d-block text-end">Bà: Nguyễn Thị B</span>
+                                        <span class="d-block text-end">Chú rể: Nguyễn Văn X</span>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-lg-6">
+                                    <img src="./assets/images/wedding/info_couple/co_dau.jpg" class="w-100">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div class="p-3 diachi">Địa chỉ: Đội 2, Xóm Mới, Thôn Thuận Thượng, Xã Song Phượng, Huyện
+                                        Đan Phượng, Hà Nội</div>
+                                    <div class="gio-moitiec">16:30</div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="border-top border-bottom border-2 p-2 fs-4">Chủ Nhật</div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center px-4">
+                                            <div class="ngay-moitiec">31</div>
+                                            <div class="">Năm 2023</div>
+                                        </div>
+                                        <div class="border-top border-bottom border-2 p-2 fs-4">Tháng 12</div>
+                                    </div>
+                                    <div class="p-3">(Tức ngày 19 tháng 11 năm Quý Mão)</div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center w-100">
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="ngay-2" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Ngày</div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="gio-2" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Giờ</div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="phut-2" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Phút</div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                                        <div id="giay-2" class="fs-1 text-danger font-great-vibes"></div>
+                                        <div class="text-danger countdown-clock-label">Giây</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="albumanhcuoi"></div>
+            <section class="p-3 p-sm-5 d-flex flex-column justify-content-center align-items-center">
+                <div
+                    class="d-flex flex-row justify-content-center align-items-center fs-2 fs-md-1 font-dancing-script pb-5">
+                    <span>Album Ảnh Cưới</span>
+                </div>
+                <div class="row flex-wrap album-grid"></div>
+                <!-- Modal -->
+                <div class="modal fade bg-secondary h-100" id="albumModal" tabindex="-1"
+                    aria-labelledby="albumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen bg-secondary h-100">
+                        <div class="modal-content bg-secondary h-100">
+                            <div class="modal-header bg-secondary border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div
+                                class="modal-body bg-secondary text-white d-flex justify-content-center align-items-center h-100">
+                                <div class="swiper mySwiper2 h-100">
+                                    <div class="swiper-wrapper h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="chucmung"></div>
+            <section class="p-3 p-sm-5">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center fs-2 fs-md-1 font-dancing-script pb-5">
+                    <span>Gửi Lời Chúc Phúc</span>
+                    <span>Tới Cô Dâu Và Chú Rể</span>
+                </div>
+                <div class="">
+                    <form>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio" id="radio-nha-trai" checked>
+                                <label class="form-check-label" for="radio-nha-trai">
+                                    Người thân, bạn bè của nhà trai
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio" id="radio-nha-gai">
+                                <label class="form-check-label" for="radio-nha-gai">
+                                    Người thân, bạn bè của nhà gái
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="form-loi-chuc-name" class="form-label">Tên người chúc</label>
+                            <input type="text" class="form-control" id="form-loi-chuc-name"
+                                placeholder="Tên người chúc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="form-loi-chuc-message" class="form-label">Lời chúc dành cho cô dâu và chú
+                                rể</label>
+                            <textarea class="form-control" id="form-loi-chuc-message" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button id="btn-submit-loi-chuc" type="submit" class="btn btn-primary">Gửi lời chúc</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="p-3 p-sm-5">
+                <div class="thank-you font-dancing-script text-center">Sự hiện diện của các bạn là niềm vinh hạnh của
+                    chúng tôi. Chân thành cảm ơn!!!</div>
+            </section>
+        </div>
+        <!-- End Main Content -->
+        <!-- --------------------------------------------------- -->
+        <!-- Floating Items -->
+        <button type="button"
+            class="btn btn-danger rounded-circle btn-floating btn-lg d-flex justify-content-center align-items-center"
+            id="floating-music-btn" custom-muted="true">
+            <ion-icon id="floating-sound-btn" name="volume-high-outline"></ion-icon>
+            <ion-icon id="floating-muted-btn" name="volume-mute-outline"></ion-icon>
+        </button>
+        <button type="button"
+            class="btn btn-danger rounded-circle btn-floating btn-lg justify-content-center align-items-center"
+            id="btn-back-to-top">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </button>
+        <div class="heart x1"></div>
+        <div class="heart x2"></div>
+        <div class="heart x3"></div>
+        <div class="heart x4"></div>
+        <div class="heart x5"></div>
+        <!-- End Floating Items -->
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
