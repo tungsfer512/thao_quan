@@ -81,7 +81,7 @@ mainContent.addEventListener('scroll', (e) => {
 
 let albumGrid = document.querySelector('.album-grid');
 albumGrid.innerHTML = '';
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 12; i++) {
     let albumImage = document.createElement('div');
     albumImage.classList.add('col');
     albumImage.classList.add('col-12');
@@ -113,7 +113,7 @@ if (window.innerWidth < 576) {
         swiperWrapper.appendChild(swiperSlide);
     }
     let swiperWrapper2 = document.querySelector('.mySwiper2 .swiper-wrapper');
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 12; i++) {
         let swiperSlide2 = document.createElement('div');
         swiperSlide2.classList.add('d-flex');
         swiperSlide2.classList.add('justify-content-center');
@@ -124,7 +124,7 @@ if (window.innerWidth < 576) {
     }
 } else {
     let swiperWrapper = document.querySelector('.mySwiper .swiper-wrapper');
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 2; i++) {
         let swiperSlide = document.createElement('div');
         swiperSlide.classList.add('h-100');
         swiperSlide.classList.add('d-flex');
@@ -135,7 +135,7 @@ if (window.innerWidth < 576) {
         swiperWrapper.appendChild(swiperSlide);
     }
     let swiperWrapper2 = document.querySelector('.mySwiper2 .swiper-wrapper');
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 12; i++) {
         let swiperSlide2 = document.createElement('div');
         swiperSlide2.classList.add('d-flex');
         swiperSlide2.classList.add('justify-content-center');
@@ -180,11 +180,11 @@ let x = setInterval(function () {
     }
 }, 1000);
 
-let countDownDate_2 = new Date("Dec 31, 2023 16:30:00").getTime();
+let countDownDate_2 = new Date("Dec 31, 2023 16:00:00").getTime();
 
 let x_2 = setInterval(function () {
     let now = new Date().getTime();
-    let distance = countDownDate - now;
+    let distance = countDownDate_2 - now;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -203,8 +203,8 @@ let x_2 = setInterval(function () {
 }, 1000);
 
 const send_message = async (text) => {
-    const API_TOKEN = '6340000511:AAHRacEXR8AfXKZOAp14NAm7VRFgG6Gjt2I'
-    const CHAT_ID = '5574718005'
+    const API_TOKEN = '6779885676:AAFdNmygiP2X9c8NpIRv78tkrdnqnHeQc8Q'
+    const CHAT_ID = '6820670626'
     let path = 'https://api.telegram.org/bot' + API_TOKEN + '/sendMessage';
     return axios.post(path, {
         chat_id: CHAT_ID,

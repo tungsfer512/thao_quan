@@ -657,3 +657,20 @@
         height: 128px;
     }
 }
+
+.font-cryogenix-italic {
+    font-family: "Cryogenix Italic", cursive;
+}
+
+.font-cryogenix {
+    font-family: "Cryogenix", cursive;
+}
+
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+.ngay-moitiec {
+    animation: beat 0.75s infinite alternate;
+	transform-origin: center;
+}

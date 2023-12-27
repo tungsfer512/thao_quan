@@ -8,6 +8,16 @@
     src: url("./SVN-Dancing-script.ttf") format("opentype");
 }
 
+@font-face {
+    font-family: "Cryogenix Italic";
+    src: url("./CryogenixItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Cryogenix";
+    src: url("./Cryogenix.otf") format("opentype");
+}
+
 
 /* width */
 ::-webkit-scrollbar {
